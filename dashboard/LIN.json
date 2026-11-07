@@ -1,0 +1,135 @@
+{
+  "carrera": "LIN",
+  "nombreCarrera": "Licenciatura en Inteligencia de Negocios",
+  "plan": "PLAN 2021-2",
+  "creditos": {
+    "obligatorios": 298,
+    "optativos": 52,
+    "total": 350,
+    "nota": "Incluye los 10 cr. de prácticas profesionales."
+  },
+  "etapas": [
+    {
+      "nombre": "ETAPA BÁSICA",
+      "clase": "etapa-basica",
+      "semestres": [
+        {
+          "romano": "I",
+          "numero": 1,
+          "materias": [
+            { "nombre": "Inglés I", "area": "social", "hc": "02", "hl": "--", "ht": "02", "hpc": "--", "cr": "06" },
+            { "nombre": "Desarrollo de Habilidades Socioemocionales", "area": "social", "hc": "01", "hl": "--", "ht": "03", "hpc": "--", "cr": "05" },
+            { "nombre": "Habilidades de Redacción y Comunicación", "area": "social", "hc": "01", "hl": "--", "ht": "03", "hpc": "--", "cr": "05" },
+            { "nombre": "Herramientas Digitales", "area": "ti", "hc": "01", "hl": "--", "ht": "04", "hpc": "--", "cr": "06" },
+            { "nombre": "Introducción a la Administración", "area": "economico", "hc": "02", "hl": "--", "ht": "02", "hpc": "--", "cr": "06" },
+            { "nombre": "Fundamentos de Economía", "area": "economico", "hc": "02", "hl": "--", "ht": "02", "hpc": "--", "cr": "06" },
+            { "nombre": "Matemáticas", "area": "datos", "hc": "02", "hl": "--", "ht": "02", "hpc": "--", "cr": "06" }
+          ]
+        },
+        {
+          "romano": "II",
+          "numero": 2,
+          "materias": [
+            { "nombre": "Inglés II", "area": "social", "hc": "02", "hl": "--", "ht": "02", "hpc": "--", "cr": "06" },
+            { "nombre": "Introducción a la Mercadotecnia", "area": "economico", "hc": "02", "hl": "--", "ht": "02", "hpc": "--", "cr": "06" },
+            { "nombre": "Fundamentos del Turismo en los Negocios", "area": "economico", "hc": "02", "hl": "--", "ht": "02", "hpc": "--", "cr": "06" },
+            { "nombre": "Introducción a la Contabilidad", "area": "economico", "hc": "02", "hl": "--", "ht": "03", "hpc": "--", "cr": "07" },
+            { "nombre": "Estadística", "area": "datos", "hc": "01", "hl": "--", "ht": "03", "hpc": "--", "cr": "05" },
+            { "nombre": "Introducción a la Inteligencia de Negocios", "area": "innovacion", "hc": "02", "hl": "--", "ht": "02", "hpc": "--", "cr": "06" },
+            { "nombre": "Ética, Derechos Humanos y Responsabilidad Social", "area": "social", "hc": "01", "hl": "--", "ht": "03", "hpc": "--", "cr": "05" }
+          ]
+        },
+        {
+          "romano": "III",
+          "numero": 3,
+          "materias": [
+            { "nombre": "Fundamentos de Metodología de la Investigación", "area": "social", "hc": "02", "hl": "--", "ht": "02", "hpc": "--", "cr": "06" },
+            { "nombre": "Lógica para los Negocios", "area": "datos", "hc": "01", "hl": "--", "ht": "04", "hpc": "--", "cr": "06" },
+            { "nombre": "Análisis de Procesos y Datos de Negocios", "area": "datos", "hc": "02", "hl": "--", "ht": "02", "hpc": "--", "cr": "06" },
+            { "nombre": "Programación", "area": "datos", "hc": "01", "hl": "05", "ht": "--", "hpc": "--", "cr": "07" },
+            { "nombre": "Estadística Inferencial", "area": "datos", "hc": "01", "hl": "04", "ht": "--", "hpc": "--", "cr": "06" },
+            { "nombre": "Sistemas de Información para Inteligencia de Negocios", "area": "ti", "hc": "01", "hl": "03", "ht": "--", "hpc": "--", "cr": "05" },
+            { "nombre": "Fundamentos de Redes", "area": "ti", "hc": "01", "hl": "--", "ht": "03", "hpc": "--", "cr": "05" }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "ETAPA DISCIPLINARIA",
+      "clase": "etapa-disciplinaria",
+      "semestres": [
+        {
+          "romano": "IV",
+          "numero": 4,
+          "materias": [
+            { "nombre": "Base de Datos", "area": "ti", "hc": "01", "hl": "04", "ht": "--", "hpc": "--", "cr": "06" },
+            { "nombre": "Análisis de Infraestructura Tecnológica", "area": "ti", "hc": "01", "hl": "--", "ht": "03", "hpc": "--", "cr": "05" },
+            { "nombre": "Administración Estratégica", "area": "economico", "hc": "02", "hl": "--", "ht": "02", "hpc": "--", "cr": "06" },
+            { "nombre": "Matemáticas Financieras", "area": "datos", "hc": "01", "hl": "--", "ht": "04", "hpc": "--", "cr": "06" },
+            { "nombre": "Programación Estadística", "area": "datos", "hc": "01", "hl": "05", "ht": "--", "hpc": "--", "cr": "07" },
+            { "nombre": "Optativa", "area": "optativa", "hc": "--", "hl": "--", "ht": "--", "hpc": "--", "cr": "Vr" },
+            { "nombre": "Optativa", "area": "optativa", "hc": "--", "hl": "--", "ht": "--", "hpc": "--", "cr": "Vr" }
+          ]
+        },
+        {
+          "romano": "V",
+          "numero": 5,
+          "materias": [
+            { "nombre": "Base de Datos Avanzada", "area": "ti", "hc": "01", "hl": "04", "ht": "--", "hpc": "--", "cr": "06" },
+            { "nombre": "Programación para la Extracción de Datos", "area": "datos", "hc": "01", "hl": "05", "ht": "--", "hpc": "--", "cr": "07" },
+            { "nombre": "Seguridad Informática", "area": "ti", "hc": "02", "hl": "--", "ht": "02", "hpc": "--", "cr": "06" },
+            { "nombre": "Tecnologías Digitales para la Innovación", "area": "innovacion", "hc": "02", "hl": "01", "ht": "01", "hpc": "--", "cr": "06" },
+            { "nombre": "Metodologías y Herramientas para la Innovación", "area": "innovacion", "hc": "02", "hl": "--", "ht": "02", "hpc": "--", "cr": "06" },
+            { "nombre": "Análisis Financiero", "area": "economico", "hc": "02", "hl": "--", "ht": "02", "hpc": "--", "cr": "06" },
+            { "nombre": "Mercadotecnia Digital para los Negocios", "area": "economico", "hc": "01", "hl": "03", "ht": "--", "hpc": "--", "cr": "05" }
+          ]
+        },
+        {
+          "romano": "VI",
+          "numero": 6,
+          "materias": [
+            { "nombre": "Economía de la Innovación", "area": "innovacion", "hc": "02", "hl": "--", "ht": "01", "hpc": "--", "cr": "05" },
+            { "nombre": "Big Data", "area": "datos", "hc": "01", "hl": "04", "ht": "--", "hpc": "--", "cr": "06" },
+            { "nombre": "Gestión Tecnológica y Control Interno", "area": "ti", "hc": "02", "hl": "--", "ht": "02", "hpc": "--", "cr": "06" },
+            { "nombre": "Administración de Proyectos", "area": "economico", "hc": "01", "hl": "02", "ht": "03", "hpc": "--", "cr": "07" },
+            { "nombre": "Costos y Presupuestos", "area": "economico", "hc": "02", "hl": "--", "ht": "02", "hpc": "--", "cr": "06" },
+            { "nombre": "Modelos de Negocio e Innovación", "area": "innovacion", "hc": "02", "hl": "--", "ht": "02", "hpc": "--", "cr": "06" },
+            { "nombre": "Optativa", "area": "optativa", "hc": "--", "hl": "--", "ht": "--", "hpc": "--", "cr": "Vr" }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "ETAPA TERMINAL",
+      "clase": "etapa-terminal",
+      "semestres": [
+        {
+          "romano": "VII",
+          "numero": 7,
+          "materias": [
+            { "nombre": "Ciencia de Datos", "area": "datos", "hc": "01", "hl": "04", "ht": "--", "hpc": "--", "cr": "06" },
+            { "nombre": "Metodologías de Inteligencia de Negocios", "area": "ti", "hc": "01", "hl": "04", "ht": "--", "hpc": "--", "cr": "06" },
+            { "nombre": "Patrones de Comportamiento de Datos", "area": "datos", "hc": "02", "hl": "02", "ht": "--", "hpc": "--", "cr": "06" },
+            { "nombre": "Gestión de la Innovación", "area": "innovacion", "hc": "02", "hl": "--", "ht": "02", "hpc": "--", "cr": "06" },
+            { "nombre": "Marco Legal de las TI e Innovación", "area": "ti", "hc": "02", "hl": "--", "ht": "02", "hpc": "--", "cr": "06" },
+            { "nombre": "Gobierno de TI", "area": "ti", "hc": "02", "hl": "--", "ht": "02", "hpc": "--", "cr": "06" },
+            { "nombre": "Desarrollo de Emprendedores", "area": "economico", "hc": "01", "hl": "--", "ht": "04", "hpc": "--", "cr": "06" }
+          ]
+        },
+        {
+          "romano": "VIII",
+          "numero": 8,
+          "materias": [
+            { "nombre": "Inteligencia de Mercados", "area": "datos", "hc": "01", "hl": "03", "ht": "--", "hpc": "--", "cr": "05" },
+            { "nombre": "Auditoría de TI e Innovación", "area": "ti", "hc": "01", "hl": "--", "ht": "03", "hpc": "--", "cr": "05" },
+            { "nombre": "Formulación y Evaluación de Proyectos en Innovación", "area": "innovacion", "hc": "02", "hl": "--", "ht": "02", "hpc": "--", "cr": "06" },
+            { "nombre": "Optativa", "area": "optativa", "hc": "--", "hl": "--", "ht": "--", "hpc": "--", "cr": "Vr" },
+            { "nombre": "Optativa", "area": "optativa", "hc": "--", "hl": "--", "ht": "--", "hpc": "--", "cr": "Vr" },
+            { "nombre": "Optativa", "area": "optativa", "hc": "--", "hl": "--", "ht": "--", "hpc": "--", "cr": "Vr" },
+            { "nombre": "Optativa", "area": "optativa", "hc": "--", "hl": "--", "ht": "--", "hpc": "--", "cr": "Vr" }
+          ]
+        }
+      ]
+    }
+  ]
+}

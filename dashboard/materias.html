@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UABC - Malla Curricular Interactiva</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="navbar-primary">
+    <div class="navbar-brand">
+      <img src="https://www.tij.uabc.mx/wp-content/uploads/2022/06/UABC_escudo_SER-01.jpg" alt="Logo UABC">
+      <div class="brand-text">
+        <h1>UNIVERSIDAD AUTÓNOMA DE BAJA CALIFORNIA</h1>
+        <p>CONTROL DOCUMENTAL DOCENTE DE LA FCA</p>
+      </div>
+    </div>
+    <div class="navbar-user">
+      <i class="fa-solid fa-bell icon-btn"><span class="badge">1</span></i>
+      <i class="fa-solid fa-folder icon-btn"></i>
+      <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+    </div>
+  </header>
+
+  <!-- NAV SECUNDARIO -->
+  <nav class="navbar-secondary">
+    <ul>
+      <li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+      <li><a href="index.html"><i class="fa-solid fa-table-cells-large"></i> Estadisticas</a></li>
+      <li><a href="docentes.html"><i class="fa-solid fa-user-graduate"></i> Docentes</a></li>
+      <li class="active"><a href="materias.html"><i class="fa-solid fa-book"></i> Materias</a></li>
+      <li><a href="documentos.html"><i class="fa-solid fa-file-lines"></i> Documentos</a></li>
+      <li><a href="reportes.html"><i class="fa-solid fa-chart-bar"></i> Reportes</a></li>
+    </ul>
+  </nav>
+
+  <div class="main-layout">
+    <aside class="sidebar">
+      <button class="side-btn"><i class="fa-solid fa-table-cells"></i></button>
+      <button class="side-btn"><i class="fa-solid fa-users"></i></button>
+      <button class="side-btn active"><i class="fa-solid fa-book"></i></button>
+      <button class="side-btn"><i class="fa-solid fa-gear"></i></button>
+    </aside>
+
+    <main class="dashboard-content">
+
+      <!-- MENÚ LATERAL INTERACTIVO DE CARRERAS -->
+      <div class="mapa-layout">
+        <aside class="menu-carreras">
+          <h3>Planes de Estudio</h3>
+          <ul id="listaCarrerasMenu">
+            <li class="active" onclick="seleccionarCarrera('LIN', this)">
+              <i class="fa-solid fa-laptop-code"></i>
+              <div>
+                <strong>LIN</strong>
+                <span>Inteligencia de Negocios</span>
+              </div>
+            </li>
+            <li onclick="seleccionarCarrera('LAE', this)">
+              <i class="fa-solid fa-briefcase"></i>
+              <div>
+                <strong>LAE</strong>
+                <span>Administración de Empresas</span>
+              </div>
+            </li>
+            <li onclick="seleccionarCarrera('LC', this)">
+              <i class="fa-solid fa-calculator"></i>
+              <div>
+                <strong>LC</strong>
+                <span>Contaduría</span>
+              </div>
+            </li>
+            <li onclick="seleccionarCarrera('LNI', this)">
+              <i class="fa-solid fa-globe"></i>
+              <div>
+                <strong>LNI</strong>
+                <span>Negocios Internacionales</span>
+              </div>
+            </li>
+          </ul>
+        </aside>
+
+        <!-- VISOR DEL MAPA CURRICULAR -->
+        <section class="mapa-wrapper">
+          <div class="mapa-header-title">
+            <h2 id="tituloCarreraMap">MAPA CURRICULAR</h2>
+            <p id="subtituloCarreraMap">Licenciatura | PLAN 2021-2</p>
+          </div>
+
+          <!-- CONTENEDOR GRID DE LAS ETAPAS Y SEMESTRES -->
+          <div class="reticula-container" id="reticulaContainer">
+            <!-- Se dibuja dinámicamente -->
+          </div>
+
+          <!-- SECCIÓN INFERIOR / LEYENDAS Y RESUMEN DE CRÉDITOS -->
+          <footer class="mapa-footer" id="mapaFooter">
+            <!-- Leyendas y detalles generados desde JS -->
+          </footer>
+        </section>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="js/materias.js"></script>
+  <script src="LIN.json"></script>
+</body>
+</html>

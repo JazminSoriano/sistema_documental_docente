@@ -1,0 +1,408 @@
+/* ==========================================================================
+UABC CONTROL DOCUMENTAL DASHBOARD - COMPONENTS
+========================================================================== */
+
+/* --------------------------------------------------------------------------
+
+NAVIGATION COMPONENTS
+-------------------------------------------------------------------------- */
+.uabc-navbar-primary {
+background: linear-gradient(90deg, var(--uabc-green, #00723F) 0%, var(--uabc-green, #00723F) 82%, var(--uabc-gold, #DD971A) 100%);
+color: #ffffff;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 16px;
+height: 52px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.uabc-brand-group {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.uabc-brand-logo {
+height: 36px;
+width: auto;
+object-fit: contain;
+}
+
+.uabc-brand-info h1 {
+font-size: 14px;
+font-weight: 700;
+line-height: 1.1;
+letter-spacing: 0.3px;
+margin: 0;
+text-transform: uppercase;
+}
+
+.uabc-brand-info p {
+font-size: 9px;
+opacity: 0.85;
+margin: 1px 0 0 0;
+letter-spacing: 0.2px;
+}
+
+.uabc-nav-user-actions {
+display: flex;
+align-items: center;
+gap: 16px;
+}
+
+.uabc-nav-icon-btn {
+background: transparent;
+border: none;
+color: #ffffff;
+font-size: 16px;
+cursor: pointer;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 28px;
+height: 28px;
+border-radius: 50%;
+transition: background-color 0.2s ease;
+}
+
+.uabc-nav-icon-btn:hover {
+background-color: rgba(255, 255, 255, 0.15);
+}
+
+.uabc-nav-icon-btn .badge-count {
+position: absolute;
+top: 1px;
+right: 1px;
+background-color: #d9534f;
+color: #ffffff;
+font-size: 9px;
+font-weight: bold;
+height: 14px;
+min-width: 14px;
+border-radius: 7px;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0 3px;
+}
+
+.uabc-user-avatar {
+width: 32px;
+height: 32px;
+border-radius: 50%;
+background-color: #e2e8f0;
+color: #475569;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 600;
+font-size: 13px;
+border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Secondary Tab Navigation */
+.uabc-navbar-secondary {
+background-color: var(--uabc-dark-green, #005C30);
+padding: 0 16px;
+display: flex;
+align-items: flex-end;
+}
+
+.uabc-nav-tabs {
+display: flex;
+list-style: none;
+gap: 2px;
+margin: 0;
+padding: 0;
+}
+
+.uabc-nav-item a {
+display: inline-flex;
+align-items: center;
+gap: 8px;
+padding: 8px 16px;
+color: rgba(255, 255, 255, 0.85);
+text-decoration: none;
+font-size: 12px;
+font-weight: 500;
+border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+transition: all 0.2s ease;
+}
+
+.uabc-nav-item.active a,
+.uabc-nav-item a:hover {
+background-color: var(--uabc-gold, #DD971A);
+color: #1a1a1a;
+font-weight: 700;
+}
+
+/* --------------------------------------------------------------------------
+2. FILTER CONTROL BAR
+-------------------------------------------------------------------------- */
+.uabc-filter-card {
+background-color: #ffffff;
+border: 1px solid #e2e8f0;
+border-radius: 8px;
+padding: 12px 16px;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+gap: 12px;
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.uabc-filter-control {
+display: flex;
+flex-direction: column;
+gap: 4px;
+}
+
+.uabc-filter-control label {
+font-size: 11px;
+font-weight: 600;
+color: #475569;
+}
+
+.uabc-filter-control select,
+.uabc-filter-control input {
+padding: 6px 10px;
+border: 1px solid #cbd5e1;
+border-radius: 5px;
+background-color: #ffffff;
+font-size: 12px;
+color: #1e293b;
+outline: none;
+transition: border-color 0.2s;
+}
+
+.uabc-filter-control select:focus,
+.uabc-filter-control input:focus {
+border-color: var(--uabc-green, #00723F);
+box-shadow: 0 0 0 2px rgba(0, 114, 63, 0.15);
+}
+
+/* --------------------------------------------------------------------------
+3. KPI METRIC CARDS
+-------------------------------------------------------------------------- */
+.uabc-kpi-card {
+background-color: #ffffff;
+border-radius: 8px;
+border: 1px solid #e2e8f0;
+padding: 14px 16px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.uabc-kpi-header {
+font-size: 12px;
+font-weight: 600;
+color: #64748b;
+}
+
+.uabc-kpi-body {
+display: flex;
+align-items: flex-end;
+justify-content: space-between;
+margin-top: 10px;
+}
+
+.uabc-kpi-value {
+font-size: 28px;
+font-weight: 700;
+color: #0f172a;
+line-height: 1;
+}
+
+.uabc-trend-indicator {
+font-size: 10px;
+font-weight: 600;
+display: inline-flex;
+align-items: center;
+gap: 2px;
+margin-top: 4px;
+}
+
+.uabc-trend-indicator.up { color: #16a34a; }
+.uabc-trend-indicator.down { color: #dc2626; }
+
+/* Radial donut widget */
+.uabc-donut-progress {
+width: 44px;
+height: 44px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+
+.uabc-donut-inner {
+width: 32px;
+height: 32px;
+border-radius: 50%;
+background-color: #ffffff;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 10px;
+font-weight: 700;
+color: #0f172a;
+}
+
+/* --------------------------------------------------------------------------
+4. HEATMAP & MATRIX TABLES
+-------------------------------------------------------------------------- */
+.uabc-sub-tabs {
+display: inline-flex;
+background-color: #f1f5f9;
+padding: 3px;
+border-radius: 6px;
+gap: 2px;
+}
+
+.uabc-tab-btn {
+border: none;
+background: transparent;
+padding: 4px 12px;
+font-size: 11px;
+font-weight: 500;
+color: #64748b;
+border-radius: 4px;
+cursor: pointer;
+transition: all 0.15s ease;
+}
+
+.uabc-tab-btn.active {
+background-color: var(--uabc-green, #00723F);
+color: #ffffff;
+font-weight: 600;
+}
+
+.uabc-heatmap-table {
+width: 100%;
+border-collapse: separate;
+border-spacing: 4px;
+margin-top: 8px;
+}
+
+.uabc-heatmap-table th {
+font-size: 11px;
+font-weight: 600;
+color: #64748b;
+padding: 6px;
+text-align: center;
+}
+
+.uabc-heatmap-table td.row-label {
+text-align: left;
+font-size: 11px;
+font-weight: 500;
+color: #334155;
+background: transparent;
+padding: 6px 8px;
+}
+
+.uabc-heatmap-cell {
+text-align: center;
+padding: 10px 4px;
+border-radius: 4px;
+font-size: 11px;
+font-weight: 700;
+color: #ffffff;
+cursor: pointer;
+transition: transform 0.1s ease, opacity 0.2s;
+}
+
+.uabc-heatmap-cell:hover {
+transform: scale(1.03);
+opacity: 0.9;
+}
+
+.bg-cell-success { background-color: #00723F; }
+.bg-cell-warning { background-color: #DD971A; }
+.bg-cell-danger  { background-color: #C82333; }
+
+/* Floating Tooltip inside matrix */
+.uabc-matrix-tooltip {
+position: absolute;
+background-color: rgba(15, 23, 42, 0.92);
+color: #ffffff;
+padding: 8px 12px;
+border-radius: 6px;
+font-size: 10px;
+box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+z-index: 10;
+pointer-events: none;
+}
+
+/* --------------------------------------------------------------------------
+5. DATA TABLES & STATUS BADGES
+-------------------------------------------------------------------------- */
+.uabc-table-container {
+width: 100%;
+overflow-x: auto;
+}
+
+.uabc-data-table {
+width: 100%;
+border-collapse: collapse;
+text-align: left;
+}
+
+.uabc-data-table th {
+background-color: #f8fafc;
+color: #64748b;
+font-size: 11px;
+font-weight: 600;
+padding: 10px 12px;
+border-bottom: 1px solid #e2e8f0;
+}
+
+.uabc-data-table td {
+padding: 10px 12px;
+border-bottom: 1px solid #f1f5f9;
+font-size: 12px;
+color: #334155;
+vertical-align: middle;
+}
+
+.uabc-badge {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+padding: 2px 10px;
+border-radius: 12px;
+font-size: 10px;
+font-weight: 700;
+color: #ffffff;
+text-transform: capitalize;
+}
+
+.uabc-badge.success { background-color: #00723F; }
+.uabc-badge.warning { background-color: #DD971A; }
+.uabc-badge.danger  { background-color: #C82333; }
+
+.uabc-btn-action {
+color: var(--uabc-green, #00723F);
+background: transparent;
+border: none;
+font-size: 11px;
+font-weight: 600;
+cursor: pointer;
+display: inline-flex;
+align-items: center;
+gap: 4px;
+text-decoration: none;
+padding: 2px 6px;
+border-radius: 4px;
+transition: background-color 0.15s;
+}
+
+.uabc-btn-action:hover {
+background-color: #f0fdf4;
+text-decoration: underline;
+}

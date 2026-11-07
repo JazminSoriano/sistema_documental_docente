@@ -1,0 +1,143 @@
+{
+  "carrera": "LAE",
+  "nombreCarrera": "Licenciatura en Administración de Empresas",
+  "plan": "PLAN 2021-2",
+  "creditos": {
+    "obligatorios": 298,
+    "optativos": 52,
+    "total": 350,
+    "nota": "Incluye 10 CR de Prácticas Profesionales y 02 CR de Proyecto de Vinculación."
+  },
+  "etapas": [
+    {
+      "nombre": "ETAPA BÁSICA",
+      "clase": "etapa-basica",
+      "semestres": [
+        {
+          "romano": "I",
+          "numero": 1,
+          "materias": [
+            { "nombre": "Inglés I", "area": "complementaria", "hc": "02", "hl": "--", "ht": "02", "hpc": "--", "cr": "06" },
+            { "nombre": "Matemáticas", "area": "finanzas", "hc": "02", "hl": "--", "ht": "02", "hpc": "--", "cr": "06" },
+            { "nombre": "Habilidades de Redacción y Comunicación", "area": "complementaria", "hc": "01", "hl": "--", "ht": "03", "hpc": "--", "cr": "05" },
+            { "nombre": "Herramientas Digitales", "area": "complementaria", "hc": "01", "hl": "--", "ht": "04", "hpc": "--", "cr": "06" },
+            { "nombre": "Fundamentos de Economía", "area": "finanzas", "hc": "02", "hl": "--", "ht": "02", "hpc": "--", "cr": "06" },
+            { "nombre": "Introducción a la Administración", "area": "organizacional", "hc": "02", "hl": "--", "ht": "02", "hpc": "--", "cr": "06" },
+            { "nombre": "Desarrollo de Habilidades Socioemocionales", "area": "complementaria", "hc": "02", "hl": "--", "ht": "01", "hpc": "--", "cr": "05" }
+          ]
+        },
+        {
+          "romano": "II",
+          "numero": 2,
+          "materias": [
+            { "nombre": "Inglés II", "area": "complementaria", "hc": "02", "hl": "--", "ht": "02", "hpc": "--", "cr": "06" },
+            { "nombre": "Estadística", "area": "finanzas", "hc": "01", "hl": "--", "ht": "03", "hpc": "--", "cr": "05" },
+            { "nombre": "Introducción a la Mercadotecnia", "area": "mercadotecnia", "hc": "02", "hl": "--", "ht": "02", "hpc": "--", "cr": "06" },
+            { "nombre": "Introducción a la Inteligencia de Negocios", "area": "complementaria", "hc": "02", "hl": "--", "ht": "02", "hpc": "--", "cr": "06" },
+            { "nombre": "Introducción a la Contabilidad", "area": "finanzas", "hc": "02", "hl": "--", "ht": "03", "hpc": "--", "cr": "07" },
+            { "nombre": "Fundamentos del Turismo en los Negocios", "area": "complementaria", "hc": "02", "hl": "--", "ht": "02", "hpc": "--", "cr": "06" },
+            { "nombre": "Ética, Derechos Humanos y Responsabilidad Social", "area": "complementaria", "hc": "01", "hl": "--", "ht": "03", "hpc": "--", "cr": "05" }
+          ]
+        },
+        {
+          "romano": "III",
+          "numero": 3,
+          "materias": [
+            { "nombre": "Derecho Laboral", "area": "talento", "hc": "02", "hl": "--", "ht": "02", "hpc": "--", "cr": "06" },
+            { "nombre": "Métodos Cuantitativos", "area": "operaciones", "hc": "01", "hl": "02", "ht": "01", "hpc": "--", "cr": "05" },
+            { "nombre": "Fundamentos de Metodología de la Investigación", "area": "complementaria", "hc": "02", "hl": "--", "ht": "02", "hpc": "--", "cr": "06" },
+            { "nombre": "Sistemas de Información para la Toma de Decisiones", "area": "organizacional", "hc": "01", "hl": "02", "ht": "01", "hpc": "--", "cr": "05" },
+            { "nombre": "Matemáticas Financieras", "area": "finanzas", "hc": "01", "hl": "--", "ht": "04", "hpc": "--", "cr": "06" },
+            { "nombre": "Proceso Administrativo", "area": "organizacional", "hc": "01", "hl": "--", "ht": "03", "hpc": "--", "cr": "05" },
+            { "nombre": "Diseño Organizacional", "area": "organizacional", "hc": "02", "hl": "--", "ht": "02", "hpc": "--", "cr": "06" },
+            { "nombre": "Optativa", "area": "optativa", "hc": "--", "hl": "--", "ht": "--", "hpc": "--", "cr": "Vr" },
+            { "nombre": "Optativa", "area": "optativa", "hc": "--", "hl": "--", "ht": "--", "hpc": "--", "cr": "Vr" }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "ETAPA DISCIPLINARIA",
+      "clase": "etapa-disciplinaria",
+      "semestres": [
+        {
+          "romano": "IV",
+          "numero": 4,
+          "materias": [
+            { "nombre": "Contribuciones de Seguridad Social", "area": "talento", "hc": "01", "hl": "02", "ht": "01", "hpc": "--", "cr": "05" },
+            { "nombre": "Modelos Estadísticos para los Negocios", "area": "operaciones", "hc": "01", "hl": "01", "ht": "02", "hpc": "--", "cr": "05" },
+            { "nombre": "Mercadotecnia Estratégica", "area": "mercadotecnia", "hc": "01", "hl": "--", "ht": "03", "hpc": "--", "cr": "05" },
+            { "nombre": "Administración de Proyectos", "area": "organizacional", "hc": "01", "hl": "01", "ht": "02", "hpc": "--", "cr": "05" },
+            { "nombre": "Análisis Financiero", "area": "finanzas", "hc": "01", "hl": "02", "ht": "01", "hpc": "--", "cr": "05" },
+            { "nombre": "Comercio Exterior", "area": "complementaria", "hc": "01", "hl": "--", "ht": "03", "hpc": "--", "cr": "05" },
+            { "nombre": "Integración y Desarrollo del Talento Humano", "area": "talento", "hc": "02", "hl": "--", "ht": "03", "hpc": "--", "cr": "07" },
+            { "nombre": "Optativa", "area": "optativa", "hc": "--", "hl": "--", "ht": "--", "hpc": "--", "cr": "Vr" }
+          ]
+        },
+        {
+          "romano": "V",
+          "numero": 5,
+          "materias": [
+            { "nombre": "Impuestos", "area": "finanzas", "hc": "01", "hl": "02", "ht": "01", "hpc": "--", "cr": "05" },
+            { "nombre": "Administración de Operaciones", "area": "operaciones", "hc": "01", "hl": "02", "ht": "01", "hpc": "--", "cr": "05" },
+            { "nombre": "Mercadotecnia Digital", "area": "mercadotecnia", "hc": "01", "hl": "03", "ht": "--", "hpc": "--", "cr": "05" },
+            { "nombre": "Contabilidad Administrativa", "area": "finanzas", "hc": "01", "hl": "02", "ht": "01", "hpc": "--", "cr": "05" },
+            { "nombre": "Administración de Capital de Trabajo", "area": "finanzas", "hc": "01", "hl": "--", "ht": "03", "hpc": "--", "cr": "05" },
+            { "nombre": "Seguridad e Higiene", "area": "talento", "hc": "01", "hl": "--", "ht": "03", "hpc": "--", "cr": "05" },
+            { "nombre": "Optativa", "area": "optativa", "hc": "--", "hl": "--", "ht": "--", "hpc": "--", "cr": "Vr" },
+            { "nombre": "Optativa", "area": "optativa", "hc": "--", "hl": "--", "ht": "--", "hpc": "--", "cr": "Vr" },
+            { "nombre": "Optativa", "area": "optativa", "hc": "--", "hl": "--", "ht": "--", "hpc": "--", "cr": "Vr" }
+          ]
+        },
+        {
+          "romano": "VI",
+          "numero": 6,
+          "materias": [
+            { "nombre": "Desarrollo de Emprendedores", "area": "organizacional", "hc": "01", "hl": "--", "ht": "03", "hpc": "--", "cr": "05" },
+            { "nombre": "Sistemas para la Administración de Operaciones", "area": "operaciones", "hc": "02", "hl": "--", "ht": "01", "hpc": "--", "cr": "05" },
+            { "nombre": "Investigación de Mercado", "area": "mercadotecnia", "hc": "01", "hl": "01", "ht": "02", "hpc": "--", "cr": "05" },
+            { "nombre": "Control Presupuestal", "area": "finanzas", "hc": "01", "hl": "02", "ht": "01", "hpc": "--", "cr": "05" },
+            { "nombre": "Fuentes de Financiamiento e Inversión", "area": "finanzas", "hc": "01", "hl": "--", "ht": "03", "hpc": "--", "cr": "05" },
+            { "nombre": "Liderazgo", "area": "organizacional", "hc": "01", "hl": "--", "ht": "03", "hpc": "--", "cr": "05" },
+            { "nombre": "Administración de Sueldos y Salarios", "area": "talento", "hc": "01", "hl": "--", "ht": "03", "hpc": "--", "cr": "05" },
+            { "nombre": "Optativa", "area": "optativa", "hc": "--", "hl": "--", "ht": "--", "hpc": "--", "cr": "Vr" },
+            { "nombre": "Optativa", "area": "optativa", "hc": "--", "hl": "--", "ht": "--", "hpc": "--", "cr": "Vr" }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "ETAPA TERMINAL",
+      "clase": "etapa-terminal",
+      "semestres": [
+        {
+          "romano": "VII",
+          "numero": 7,
+          "materias": [
+            { "nombre": "Transformación Digital de las Organizaciones", "area": "organizacional", "hc": "01", "hl": "02", "ht": "01", "hpc": "--", "cr": "05" },
+            { "nombre": "Administración de la Cadena de Suministro", "area": "operaciones", "hc": "01", "hl": "02", "ht": "01", "hpc": "--", "cr": "05" },
+            { "nombre": "Mercadotecnia Internacional", "area": "mercadotecnia", "hc": "01", "hl": "--", "ht": "03", "hpc": "--", "cr": "05" },
+            { "nombre": "Gestión y Control Administrativo", "area": "organizacional", "hc": "01", "hl": "01", "ht": "03", "hpc": "--", "cr": "05" },
+            { "nombre": "Formulación y Evaluación de Proyectos de Inversión", "area": "finanzas", "hc": "01", "hl": "--", "ht": "03", "hpc": "--", "cr": "05" },
+            { "nombre": "Administración Estratégica de las Organizaciones", "area": "organizacional", "hc": "01", "hl": "--", "ht": "04", "hpc": "--", "cr": "06" },
+            { "nombre": "Tópicos Avanzados de la Gestión del Talento Humano", "area": "talento", "hc": "01", "hl": "--", "ht": "03", "hpc": "--", "cr": "05" },
+            { "nombre": "Optativa", "area": "optativa", "hc": "--", "hl": "--", "ht": "--", "hpc": "--", "cr": "Vr" },
+            { "nombre": "Optativa", "area": "optativa", "hc": "--", "hl": "--", "ht": "--", "hpc": "--", "cr": "Vr" }
+          ]
+        },
+        {
+          "romano": "VIII",
+          "numero": 8,
+          "materias": [
+            { "nombre": "Plan y Desarrollo de Negocios", "area": "organizacional", "hc": "01", "hl": "--", "ht": "03", "hpc": "--", "cr": "05" },
+            { "nombre": "Administración de la Calidad", "area": "operaciones", "hc": "01", "hl": "--", "ht": "03", "hpc": "--", "cr": "05" },
+            { "nombre": "Consultoría de MIPYMES", "area": "organizacional", "hc": "01", "hl": "--", "ht": "03", "hpc": "--", "cr": "05" },
+            { "nombre": "Seminario del Talento Humano", "area": "talento", "hc": "01", "hl": "--", "ht": "02", "hpc": "--", "cr": "04" },
+            { "nombre": "Optativa", "area": "optativa", "hc": "--", "hl": "--", "ht": "--", "hpc": "--", "cr": "Vr" },
+            { "nombre": "Optativa", "area": "optativa", "hc": "--", "hl": "--", "ht": "--", "hpc": "--", "cr": "Vr" }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UABC - Plantilla Docente FCA</title>
+  
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVBAR SUPERIOR -->
+  <header class="navbar-primary">
+    <div class="navbar-brand">
+      <img src="https://www.tij.uabc.mx/wp-content/uploads/2022/06/UABC_escudo_SER-01.jpg" alt="Logo UABC">
+      <div class="brand-text">
+        <h1>UNIVERSIDAD AUTÓNOMA DE BAJA CALIFORNIA</h1>
+        <p>CONTROL DOCUMENTAL DOCENTE DE LA FCA</p>
+      </div>
+    </div>
+    <div class="navbar-user">
+      <i class="fa-solid fa-bell icon-btn"><span class="badge">2</span></i>
+      <i class="fa-solid fa-folder icon-btn"></i>
+      <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+    </div>
+  </header>
+
+  <!-- NAVEGACIÓN SECUNDARIA -->
+  <nav class="navbar-secondary">
+    <ul>
+      <li><a href="inicio.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+      <li><a href="index.html"><i class="fa-solid fa-table-cells-large"></i> Dashboard</a></li>
+      <li class="active"><a href="docentes.html"><i class="fa-solid fa-user-graduate"></i> Docentes</a></li>
+      <li><a href="materias.html"><i class="fa-solid fa-book"></i> Materias</a></li>
+      <li><a href="documentos.html"><i class="fa-solid fa-file-lines"></i> Documentos</a></li>
+      <li><a href="reportes.html"><i class="fa-solid fa-chart-bar"></i> Reportes</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENEDOR PRINCIPAL CON SIDEBAR Y DASHBOARD CONTENT -->
+  <div class="main-layout">
+    <aside class="sidebar">
+      <button class="side-btn"><i class="fa-solid fa-house"></i></button>
+      <button class="side-btn"><i class="fa-solid fa-table-cells"></i></button>
+      <button class="side-btn active"><i class="fa-solid fa-users"></i></button>
+      <button class="side-btn"><i class="fa-solid fa-file-lines"></i></button>
+      <button class="side-btn"><i class="fa-solid fa-gear"></i></button>
+    </aside>
+
+    <main class="dashboard-content">
+      
+      <!-- ENCABEZADO DE SECCIÓN -->
+      <div class="section-header">
+        <h2>Directorio y Perfiles del Personal Docente</h2>
+        <p class="section-subtitle">Consulte la información académica, tipo de contratación, adscripción y asignaturas asignadas al personal de la FCA.</p>
+      </div>
+
+      <!-- BARRA DE FILTROS -->
+      <section class="filters-bar">
+        <div class="filter-group">
+          <label for="buscarDocenteInput">Buscar Docente / Materia</label>
+          <input type="text" id="buscarDocenteInput" placeholder="Nombre, apellido o materia..." class="form-control">
+        </div>
+
+        <div class="filter-group">
+          <label for="filterCarreraPerfil">Carrera / Licenciatura</label>
+          <select id="filterCarreraPerfil" class="form-control">
+            <option value="Todas">Todas las Carreras</option>
+            <option value="LIN">Inteligencia de Negocios (LIN)</option>
+            <option value="LAE">Administración de Empresas (LAE)</option>
+            <option value="LC">Contaduría (LC)</option>
+            <option value="LNI">Negocios Internacionales (LNI)</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- CUADRÍCULA DE TARJETAS DE PERFIL -->
+      <section class="docentes-cards-grid" id="docentesCardsContainer">
+        <!-- Se renderizan dinámicamente desde js/docentes.js -->
+      </section>
+
+      <!-- SECCIÓN INFERIOR: TABLA DESPLEGABLE DE DOCENTES RECOMENDADOS -->
+      <section class="recomendados-section">
+        <div class="section-subtitle-bar">
+          <h3><i class="fa-solid fa-star"></i> Plantilla Docente Recomendada</h3>
+          <span>Haga clic en cualquier fila para desplegar la ficha académica completa</span>
+        </div>
+
+        <div class="table-responsive">
+          <table class="tabla-docentes-rec">
+            <thead>
+              <tr>
+                <th style="width: 40px;"></th>
+                <th>No. Empleado</th>
+                <th>Nombre Completo</th>
+                <th>Carrera</th>
+                <th>Tipo de Contratación</th>
+                <th>Especialidad</th>
+                <th style="text-align: center;">Acción</th>
+              </tr>
+            </thead>
+            <tbody id="tablaRecomendadosBody">
+              <!-- Carga dinámica desde js/docentes.js con los 10 aleatorios -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="js/maestros.js"></script>
+  <script src="data_maestros.json"></script>
+</body>
+</html>

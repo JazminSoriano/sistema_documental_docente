@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UABC - Control Documental Docentes</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO PRINCIPAL -->
+  <header class="navbar-primary">
+    <div class="navbar-brand">
+      <img src="https://www.tij.uabc.mx/wp-content/uploads/2022/06/UABC_escudo_SER-01.jpg" alt="Logo UABC">
+      <div class="brand-text">
+        <h1>UNIVERSIDAD AUTÓNOMA DE BAJA CALIFORNIA</h1>
+        <p>CONTROL DOCUMENTAL DOCENTE DE LA FCA</p>
+      </div>
+    </div>
+    <div class="navbar-user">
+      <i class="fa-solid fa-bell icon-btn"><span class="badge">1</span></i>
+      <i class="fa-solid fa-folder icon-btn"></i>
+      <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+    </div>
+  </header>
+
+  <!-- NAVEGACIÓN SECUNDARIA -->
+  <nav class="navbar-secondary">
+    <ul>
+      <li><a href="inicio.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+      <li><a href="index.html"><i class="fa-solid fa-table-cells-large"></i> Estadisticas</a></li>
+      <li><a href="docentes.html"><i class="fa-solid fa-table-cells-large"></i> Docentes</a></li>
+      <li><a href="materias.html"><i class="fa-solid fa-book"></i> Materias</a></li>
+      <li><a href="documentos.html"><i class="fa-solid fa-file-lines"></i> Documentos</a></li>
+      <li class="active"><a href="reportes.html"><i class="fa-solid fa-user-graduate"></i> Reportes</a></li>
+      
+  </nav>
+
+  <div class="main-layout">
+    <aside class="sidebar">
+      <button class="side-btn"><i class="fa-solid fa-table-cells"></i></button>
+      <button class="side-btn active"><i class="fa-solid fa-users"></i></button>
+      <button class="side-btn"><i class="fa-solid fa-gear"></i></button>
+    </aside>
+
+    <main class="dashboard-content">
+
+      <!-- FILTROS DE DOCENTES -->
+      <section class="filters-bar">
+        <div class="filter-group">
+          <label for="filterCarreraDocente">Carrera</label>
+          <select id="filterCarreraDocente">
+            <option value="Todas">Todas</option>
+            <option value="LIN">LIN</option>
+            <option value="LAE">LAE</option>
+            <option value="LC">LC</option>
+            <option value="LNI">LNI</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filterEstatusDocente">Estatus</label>
+          <select id="filterEstatusDocente">
+            <option value="Todos">Todos</option>
+            <option value="Completo">Completo</option>
+            <option value="En progreso">En progreso</option>
+            <option value="Pendiente">Pendiente</option>
+          </select>
+        </div>
+        <div class="filter-group filter-search-group">
+          <label for="inputBuscarDocente">Buscar</label>
+          <input type="text" id="inputBuscarDocente" placeholder="Buscar por docente, materia o documento...">
+        </div>
+      </section>
+
+      <!-- TABLA DE CONTROL Y REVISIÓN DE DOCENTES -->
+      <section class="data-table-card">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Docente</th>
+              <th>Carrera</th>
+              <th>Materia</th>
+              <th>Documento Requerido</th>
+              <th>Estatus</th>
+              <th>Fecha Límite</th>
+              <th>Fecha de Entrega</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="tablaDocentesBody">
+            <!-- Se carga dinámicamente desde js/docentes.js -->
+          </tbody>
+        </table>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/docentes.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UABC - Control Documental Inicio</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO PRINCIPAL -->
+  <header class="navbar-primary">
+    <div class="navbar-brand">
+      <img src="https://www.tij.uabc.mx/wp-content/uploads/2022/06/UABC_escudo_SER-01.jpg" alt="Logo UABC">
+      <div class="brand-text">
+        <h1>UNIVERSIDAD AUTÓNOMA DE BAJA CALIFORNIA</h1>
+        <p>CONTROL DOCUMENTAL DOCENTE DE LA FCA</p>
+      </div>
+    </div>
+    <div class="navbar-user">
+      <i class="fa-solid fa-bell icon-btn"><span class="badge">2</span></i>
+      <i class="fa-solid fa-folder icon-btn"></i>
+      <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+    </div>
+  </header>
+
+  <!-- NAVEGACIÓN SECUNDARIA -->
+  <nav class="navbar-secondary">
+    <ul>
+      <li class="active"><a href="inicio.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+      <li><a href="index.html"><i class="fa-solid fa-table-cells-large"></i> Estadisticas</a></li>
+      <li><a href="docentes.html"><i class="fa-solid fa-user-graduate"></i> Docentes</a></li>
+      <li><a href="materias.html"><i class="fa-solid fa-book"></i> Materias</a></li>
+      <li><a href="documentos.html"><i class="fa-solid fa-file-lines"></i> Documentos</a></li>
+      <li><a href="reportes.html"><i class="fa-solid fa-chart-bar"></i> Reportes</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="main-layout">
+    <aside class="sidebar">
+      <button class="side-btn active"><i class="fa-solid fa-house"></i></button>
+      <button class="side-btn"><i class="fa-solid fa-table-cells"></i></button>
+      <button class="side-btn"><i class="fa-solid fa-users"></i></button>
+      <button class="side-btn"><i class="fa-solid fa-gear"></i></button>
+    </aside>
+
+    <main class="dashboard-content">
+
+      <!-- BANNER DE BIENVENIDA Y MENSAJE DE PRESENTACIÓN -->
+      <section class="welcome-card">
+        <div class="welcome-header">
+          <div>
+            <h2>Bienvenido al Sistema de Control Documental Docente</h2>
+            <p class="subtitle">Facultad de Contaduría y Administración — Campus Tijuana</p>
+          </div>
+          <div class="cycle-pill">
+            <i class="fa-solid fa-calendar-check"></i> Ciclo Escolar 2026-1
+          </div>
+        </div>
+
+        <div class="welcome-body">
+          <p>Esta plataforma ha sido diseñada para optimizar la gestión, el seguimiento y la evaluación de la entrega de programas, avances académicos y evidencias docentes de la FCA. A través de este sistema podrás:</p>
+          
+          <ul class="features-list">
+            <li><i class="fa-solid fa-check"></i> <strong>Consultar métricas y KPIs ejecutivos:</strong> Visualizar el porcentaje de cumplimiento general, documentos pendientes e historial de entregas por periodo.</li>
+            <li><i class="fa-solid fa-check"></i> <strong>Gestionar el expediente de docentes:</strong> Revisar estatus operativos, aplicar filtros por carrera, enviar recordatorios de entrega y calificar avances.</li>
+            <li><i class="fa-solid fa-check"></i> <strong>Explorar los mapas curriculares interactivos:</strong> Consultar la distribución por semestres, horas y créditos de las carreras de <strong>LIN, LAE, LC y LNI</strong>.</li>
+            <li><i class="fa-solid fa-check"></i> <strong>Descargar material oficial:</strong> Acceder directamente a las cartas descriptivas y guías metodológicas vigentes.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SECCIÓN DE AVISOS Y PENDIENTES PRIORITARIOS -->
+      <section class="notices-section">
+        <h3><i class="fa-solid fa-triangle-exclamation"></i> Avisos y Recordatorios Importantes</h3>
+        <div class="notices-grid">
+          
+          <div class="notice-card notice-warning">
+            <div class="notice-icon"><i class="fa-solid fa-clock"></i></div>
+            <div class="notice-info">
+              <h4>Cierre de Entrega de Avance Programático</h4>
+              <p>La fecha límite para el registro del primer avance del ciclo 2026-1 concluye el próximo <strong>15 de Noviembre</strong>. Se solicita enviar recordatorios a los docentes pendientes.</p>
+            </div>
+          </div>
+
+          <div class="notice-card notice-info">
+            <div class="notice-icon"><i class="fa-solid fa-bullhorn"></i></div>
+            <div class="notice-info">
+              <h4>Mapas Curriculares Actualizados</h4>
+              <p>Ya se encuentran disponibles en la sección <strong>Materias</strong> las retículas completas correspondientes a los planes de estudio 2021-2 y 2022-2.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ENLACES A PORTALES Y MEDIOS OFICIALES UABC -->
+      <section class="uabc-links-card">
+        <h3>Medios y Portales Oficiales</h3>
+        <div class="links-buttons-grid">
+          
+          <a href="https://alumnos.uabc.mx/web/alumnos/bienvenido" target="_blank" rel="noopener noreferrer" class="uabc-btn portal-btn">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <div>
+              <strong>Portal Alumnos / Portal UABC</strong>
+              <span>alumnos.uabc.mx</span>
+            </div>
+          </a>
+
+          <a href="https://bibliotecas.uabc.mx/tijuana/" target="_blank" rel="noopener noreferrer" class="uabc-btn biblio-btn">
+            <i class="fa-solid fa-book-bookmark"></i>
+            <div>
+              <strong>Biblioteca Digital UABC</strong>
+              <span>bibliotecas.uabc.mx</span>
+            </div>
+          </a>
+
+          <a href="https://www.facebook.com/fcatijuana/" target="_blank" rel="noopener noreferrer" class="uabc-btn fb-btn">
+            <i class="fa-brands fa-facebook"></i>
+            <div>
+              <strong>Facebook FCA Tijuana</strong>
+              <span>@fcatijuana</span>
+            </div>
+          </a>
+
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+</body>
+</html>

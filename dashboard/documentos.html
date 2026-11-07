@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UABC - Gestión de Convocatorias y Entregables</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVBAR SUPERIOR -->
+  <header class="navbar-primary">
+    <div class="navbar-brand">
+      <img src="https://www.tij.uabc.mx/wp-content/uploads/2022/06/UABC_escudo_SER-01.jpg" alt="Logo UABC">
+      <div class="brand-text">
+        <h1>UNIVERSIDAD AUTÓNOMA DE BAJA CALIFORNIA</h1>
+        <p>CONTROL DOCUMENTAL DOCENTE DE LA FCA</p>
+      </div>
+    </div>
+    <div class="navbar-user">
+      <i class="fa-solid fa-bell icon-btn"><span class="badge">2</span></i>
+      <i class="fa-solid fa-folder icon-btn"></i>
+      <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+    </div>
+  </header>
+
+  <!-- NAVEGACIÓN SECUNDARIA -->
+  <nav class="navbar-secondary">
+    <ul>
+      <li><a href="inicio.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+      <li><a href="index.html"><i class="fa-solid fa-table-cells-large"></i> Estadisticas</a></li>
+      <li><a href="docentes.html"><i class="fa-solid fa-user-graduate"></i> Docentes</a></li>
+      <li><a href="materias.html"><i class="fa-solid fa-book"></i> Materias</a></li>
+      <li class="active"><a href="documentos.html"><i class="fa-solid fa-file-lines"></i> Documentos</a></li>
+      <li><a href="reportes.html"><i class="fa-solid fa-chart-bar"></i> Reportes</a></li>
+    </ul>
+  </nav>
+
+  <div class="main-layout">
+    <aside class="sidebar">
+      <button class="side-btn"><i class="fa-solid fa-house"></i></button>
+      <button class="side-btn"><i class="fa-solid fa-table-cells"></i></button>
+      <button class="side-btn"><i class="fa-solid fa-users"></i></button>
+      <button class="side-btn active"><i class="fa-solid fa-file-lines"></i></button>
+      <button class="side-btn"><i class="fa-solid fa-gear"></i></button>
+    </aside>
+
+    <main class="dashboard-content">
+      
+      <div class="section-header">
+        <h2>Gestión de Requerimientos Documentales y Convocatorias</h2>
+        <p class="section-subtitle">Redacte instrucciones oficiales, asigne fechas límite y configure los entregables requeridos para la plantilla docente.</p>
+      </div>
+
+      <div class="docs-container">
+        
+        <!-- PANEL IZQUIERDO: FORMULARIO DE REDACCIÓN / EDICIÓN -->
+        <section class="card-panel">
+          <h3 id="formTitle"><i class="fa-solid fa-pen-to-square"></i> Nueva Solicitud de Entrega</h3>
+          
+          <form id="formConvocatoria">
+            <input type="hidden" id="editId" value="">
+
+            <div class="form-group">
+              <label for="inputTitulo">Título de la Solicitud / Reporte</label>
+              <input type="text" id="inputTitulo" class="form-control" placeholder="Ej. Entrega de Avance Programático Parcial 2026-1" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="selectCarreraTarget">Carrera / Licenciatura</label>
+                <select id="selectCarreraTarget" class="form-control">
+                  <option value="Todas">Todas las Carreras</option>
+                  <option value="LIN">Inteligencia de Negocios (LIN)</option>
+                  <option value="LAE">Administración de Empresas (LAE)</option>
+                  <option value="LC">Contaduría (LC)</option>
+                  <option value="LNI">Negocios Internacionales (LNI)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="selectTipoDoc">Tipo de Entregable</label>
+                <select id="selectTipoDoc" class="form-control">
+                  <option value="Avance Programático">Avance Programático</option>
+                  <option value="Programa de Asignatura">Programa de Asignatura</option>
+                  <option value="Examen Parcial / Final">Examen Parcial / Final</option>
+                  <option value="Reporte de Calificaciones">Reporte de Calificaciones</option>
+                  <option value="Evidencia Docente">Evidencia Docente</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="inputFechaApertura">Fecha de Apertura</label>
+                <input type="date" id="inputFechaApertura" class="form-control" required>
+              </div>
+
+              <div class="form-group">
+                <label for="inputFechaVencimiento">Fecha Límite / Vencimiento</label>
+                <input type="date" id="inputFechaVencimiento" class="form-control" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="inputInstrucciones">Instrucciones Detalladas para el Docente</label>
+              <textarea id="inputInstrucciones" class="form-control" placeholder="Escriba aquí los criterios de entrega, formato del archivo (PDF/Excel), nomenclatura requerida y observaciones oficiales..." required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="inputPlantilla">Enlace a Plantilla / Guía Oficial (Opcional)</label>
+              <input type="url" id="inputPlantilla" class="form-control" placeholder="https://drive.google.com/...">
+            </div>
+
+            <button type="submit" class="btn-submit" id="btnGuardar">
+              <i class="fa-solid fa-paper-plane"></i> Publicar y Notificar a Docentes
+            </button>
+          </form>
+        </section>
+
+        <!-- PANEL DERECHO: LISTA DE SOLICITUDES VIGENTES Y PROGRAMADAS -->
+        <section class="card-panel">
+          <h3><i class="fa-solid fa-list-check"></i> Solicitudes Activas e Histórico</h3>
+          
+          <div id="listaConvocatorias">
+            <!-- Se cargan dinámicamente mediante JS -->
+          </div>
+        </section>
+
+      </div>
+
+    </main>
+  </div>
+
+  <script src="js/documentos.js"></script>
+</body>
+</html>

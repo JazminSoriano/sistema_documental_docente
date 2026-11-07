@@ -1,0 +1,135 @@
+{
+  "carrera": "LNI",
+  "nombreCarrera": "Licenciatura en Negocios Internacionales",
+  "plan": "PLAN 2022-2",
+  "creditos": {
+    "obligatorios": 270,
+    "optativos": 66,
+    "practicas": 10,
+    "total": 346,
+    "nota": "Incluye 10 CR de Prácticas Profesionales y 02 CR de Proyecto de Vinculación con Valor en Créditos."
+  },
+  "etapas": [
+    {
+      "nombre": "ETAPA BÁSICA",
+      "clase": "etapa-basica",
+      "semestres": [
+        {
+          "romano": "I",
+          "numero": 1,
+          "materias": [
+            { "clave": "38970", "nombre": "Inglés I", "area": "idioma", "hc": "2", "hl": "--", "ht": "2", "hpc": "--", "cr": "6" },
+            { "clave": "38971", "nombre": "Desarrollo de Habilidades Socioemocionales", "area": "humanista", "hc": "1", "hl": "--", "ht": "3", "hpc": "--", "cr": "5" },
+            { "clave": "38972", "nombre": "Habilidades de Redacción y Comunicación", "area": "humanista", "hc": "1", "hl": "--", "ht": "3", "hpc": "--", "cr": "5" },
+            { "clave": "38973", "nombre": "Herramientas Digitales", "area": "tecnologia", "hc": "1", "hl": "--", "ht": "4", "hpc": "--", "cr": "6" },
+            { "clave": "38974", "nombre": "Introducción a la Administración", "area": "administracion", "hc": "2", "hl": "--", "ht": "2", "hpc": "--", "cr": "6" },
+            { "clave": "38975", "nombre": "Fundamentos de Economía", "area": "economia", "hc": "2", "hl": "--", "ht": "2", "hpc": "--", "cr": "6" },
+            { "clave": "38976", "nombre": "Matemáticas", "area": "matematicas", "hc": "2", "hl": "--", "ht": "2", "hpc": "--", "cr": "6" }
+          ]
+        },
+        {
+          "romano": "II",
+          "numero": 2,
+          "materias": [
+            { "clave": "38977", "nombre": "Inglés II", "area": "idioma", "hc": "2", "hl": "--", "ht": "2", "hpc": "--", "cr": "6" },
+            { "clave": "38981", "nombre": "Estadística", "area": "matematicas", "hc": "1", "hl": "--", "ht": "3", "hpc": "--", "cr": "5" },
+            { "clave": "38979", "nombre": "Introducción a la Mercadotecnia", "area": "administracion", "hc": "2", "hl": "--", "ht": "2", "hpc": "--", "cr": "6" },
+            { "clave": "38980", "nombre": "Fundamentos del Turismo en los Negocios", "area": "administracion", "hc": "2", "hl": "--", "ht": "2", "hpc": "--", "cr": "6" },
+            { "clave": "38978", "nombre": "Introducción a la Contabilidad", "area": "contable", "hc": "2", "hl": "--", "ht": "3", "hpc": "--", "cr": "7" },
+            { "clave": "38982", "nombre": "Introducción a la Inteligencia de Negocios", "area": "administracion", "hc": "2", "hl": "--", "ht": "2", "hpc": "--", "cr": "6" },
+            { "clave": "38983", "nombre": "Ética, Derechos Humanos y Responsabilidad Social", "area": "humanista", "hc": "1", "hl": "--", "ht": "3", "hpc": "--", "cr": "5" }
+          ]
+        },
+        {
+          "romano": "III",
+          "numero": 3,
+          "materias": [
+            { "clave": "41509", "nombre": "Administración Estratégica Internacional", "area": "comercio", "hc": "2", "hl": "--", "ht": "2", "hpc": "--", "cr": "6" },
+            { "clave": "38987", "nombre": "Matemáticas Financieras", "area": "matematicas", "hc": "1", "hl": "--", "ht": "4", "hpc": "--", "cr": "6" },
+            { "clave": "41510", "nombre": "Geografía Socioeconómica", "area": "comercio", "hc": "4", "hl": "--", "ht": "--", "hpc": "--", "cr": "8" },
+            { "clave": "41511", "nombre": "Entorno Económico", "area": "economia", "hc": "3", "hl": "--", "ht": "2", "hpc": "--", "cr": "8" },
+            { "clave": "41512", "nombre": "Entorno Legal de los Negocios", "area": "derecho", "hc": "4", "hl": "--", "ht": "--", "hpc": "--", "cr": "8" },
+            { "clave": "38984", "nombre": "Fundamentos de Metodología de la Investigación", "area": "humanista", "hc": "2", "hl": "--", "ht": "2", "hpc": "--", "cr": "6" },
+            { "clave": "41513", "nombre": "Desarrollo del Pensamiento Complejo", "area": "humanista", "hc": "1", "hl": "--", "ht": "3", "hpc": "--", "cr": "5" }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "ETAPA DISCIPLINARIA",
+      "clase": "etapa-disciplinaria",
+      "semestres": [
+        {
+          "romano": "IV",
+          "numero": 4,
+          "materias": [
+            { "clave": "41514", "nombre": "Mercadotecnia Avanzada", "area": "comercio", "hc": "2", "hl": "--", "ht": "2", "hpc": "--", "cr": "6" },
+            { "clave": "41515", "nombre": "Administración de la Calidad y Certificación", "area": "derecho", "hc": "2", "hl": "--", "ht": "2", "hpc": "--", "cr": "6" },
+            { "clave": "41516", "nombre": "Análisis de Operatividad Financiera", "area": "contable", "hc": "3", "hl": "--", "ht": "2", "hpc": "--", "cr": "8" },
+            { "clave": "41517", "nombre": "Derecho Corporativo", "area": "derecho", "hc": "3", "hl": "--", "ht": "1", "hpc": "--", "cr": "7" },
+            { "clave": "41518", "nombre": "Derecho Internacional", "area": "derecho", "hc": "2", "hl": "--", "ht": "2", "hpc": "--", "cr": "6" },
+            { "clave": "41519", "nombre": "Protocolo de Negociación Internacional", "area": "administracion", "hc": "3", "hl": "--", "ht": "2", "hpc": "--", "cr": "8" },
+            { "clave": "optativa", "nombre": "Optativa", "area": "optativa", "hc": "--", "hl": "--", "ht": "--", "hpc": "--", "cr": "Vr" }
+          ]
+        },
+        {
+          "romano": "V",
+          "numero": 5,
+          "materias": [
+            { "clave": "41520", "nombre": "Logística Internacional", "area": "comercio", "hc": "2", "hl": "--", "ht": "2", "hpc": "--", "cr": "6" },
+            { "clave": "40316", "nombre": "Administración de Operaciones", "area": "administracion", "hc": "1", "hl": "2", "ht": "1", "hpc": "--", "cr": "5" },
+            { "clave": "41521", "nombre": "Administración Financiera", "area": "contable", "hc": "3", "hl": "--", "ht": "2", "hpc": "--", "cr": "8" },
+            { "clave": "41522", "nombre": "Fuentes de Financiamiento", "area": "contable", "hc": "3", "hl": "--", "ht": "--", "hpc": "--", "cr": "6" },
+            { "clave": "41523", "nombre": "Derecho Fiscal e Impuestos", "area": "derecho", "hc": "3", "hl": "--", "ht": "1", "hpc": "--", "cr": "7" },
+            { "clave": "optativa", "nombre": "Optativa", "area": "optativa", "hc": "--", "hl": "--", "ht": "--", "hpc": "--", "cr": "Vr" },
+            { "clave": "optativa", "nombre": "Optativa", "area": "optativa", "hc": "--", "hl": "--", "ht": "--", "hpc": "--", "cr": "Vr" }
+          ]
+        },
+        {
+          "romano": "VI",
+          "numero": 6,
+          "materias": [
+            { "clave": "41524", "nombre": "Plan de Comercialización Internacional", "area": "comercio", "hc": "2", "hl": "--", "ht": "2", "hpc": "--", "cr": "6" },
+            { "clave": "41525", "nombre": "Distribución Estratégica Comercial", "area": "comercio", "hc": "2", "hl": "--", "ht": "2", "hpc": "--", "cr": "6" },
+            { "clave": "41526", "nombre": "Contratos, INCOTERMS y Arbitraje", "area": "derecho", "hc": "3", "hl": "--", "ht": "1", "hpc": "--", "cr": "7" },
+            { "clave": "41527", "nombre": "Legislación de Comercio Exterior e Inversiones Extranjeras", "area": "derecho", "hc": "3", "hl": "--", "ht": "1", "hpc": "--", "cr": "7" },
+            { "clave": "optativa", "nombre": "Optativa", "area": "optativa", "hc": "--", "hl": "--", "ht": "--", "hpc": "--", "cr": "Vr" },
+            { "clave": "optativa", "nombre": "Optativa", "area": "optativa", "hc": "--", "hl": "--", "ht": "--", "hpc": "--", "cr": "Vr" },
+            { "clave": "optativa", "nombre": "Optativa", "area": "optativa", "hc": "--", "hl": "--", "ht": "--", "hpc": "--", "cr": "Vr" }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "ETAPA TERMINAL",
+      "clase": "etapa-terminal",
+      "semestres": [
+        {
+          "romano": "VII",
+          "numero": 7,
+          "materias": [
+            { "clave": "39013", "nombre": "Desarrollo de Emprendedores", "area": "administracion", "hc": "1", "hl": "--", "ht": "4", "hpc": "--", "cr": "6" },
+            { "clave": "41528", "nombre": "Finanzas Internacionales", "area": "contable", "hc": "3", "hl": "--", "ht": "--", "hpc": "--", "cr": "6" },
+            { "clave": "41529", "nombre": "Mercado de Valores", "area": "contable", "hc": "3", "hl": "--", "ht": "--", "hpc": "--", "cr": "6" },
+            { "clave": "41530", "nombre": "Marco Jurídico Aduanero", "area": "derecho", "hc": "3", "hl": "--", "ht": "1", "hpc": "--", "cr": "7" },
+            { "clave": "optativa", "nombre": "Optativa", "area": "optativa", "hc": "--", "hl": "--", "ht": "--", "hpc": "--", "cr": "Vr" },
+            { "clave": "optativa", "nombre": "Optativa", "area": "optativa", "hc": "--", "hl": "--", "ht": "--", "hpc": "--", "cr": "Vr" },
+            { "clave": "optativa", "nombre": "Optativa", "area": "optativa", "hc": "--", "hl": "--", "ht": "--", "hpc": "--", "cr": "Vr" }
+          ]
+        },
+        {
+          "romano": "VIII",
+          "numero": 8,
+          "materias": [
+            { "clave": "41531", "nombre": "Seminario de Estrategia de Negocios", "area": "administracion", "hc": "1", "hl": "--", "ht": "2", "hpc": "--", "cr": "4" },
+            { "clave": "41532", "nombre": "Seminario de Logística", "area": "comercio", "hc": "1", "hl": "--", "ht": "2", "hpc": "--", "cr": "4" },
+            { "clave": "41533", "nombre": "Análisis de Factibilidad de Proyectos de Inversión", "area": "matematicas", "hc": "2", "hl": "--", "ht": "2", "hpc": "--", "cr": "6" },
+            { "clave": "41534", "nombre": "Seminario de Comercio Exterior", "area": "comercio", "hc": "1", "hl": "--", "ht": "2", "hpc": "--", "cr": "4" },
+            { "clave": "optativa", "nombre": "Optativa", "area": "optativa", "hc": "--", "hl": "--", "ht": "--", "hpc": "--", "cr": "Vr" },
+            { "clave": "optativa", "nombre": "Optativa", "area": "optativa", "hc": "--", "hl": "--", "ht": "--", "hpc": "--", "cr": "Vr" }
+          ]
+        }
+      ]
+    }
+  ]
+}

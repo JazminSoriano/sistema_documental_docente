@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UABC - Control Documental Dashboard</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <!-- 1. ENCABEZADO PRINCIPAL -->
+  <header class="navbar-primary">
+    <div class="navbar-brand">
+      <img src="https://www.tij.uabc.mx/wp-content/uploads/2022/06/UABC_escudo_SER-01.jpg" alt="Logo UABC">
+      <div class="brand-text">
+        <h1>UNIVERSIDAD AUTÓNOMA DE BAJA CALIFORNIA</h1>
+        <p>CONTROL DOCUMENTAL DOCENTE DE LA FCA</p>
+      </div>
+    </div>
+    <div class="navbar-user">
+      <i class="fa-solid fa-bell icon-btn"><span class="badge">1</span></i>
+      <i class="fa-solid fa-folder icon-btn"></i>
+      <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+    </div>
+  </header>
+
+  <!-- 2. NAVEGACIÓN SECUNDARIA -->
+  <nav class="navbar-secondary">
+    <ul>
+      <li><a href="inicio.html"><i class="fa-solid fa-table-cells-large"></i> Inicio</a></li>
+      <li class="active"><a href="index.html"><i class="fa-solid fa-house"></i> Estadisticas</a></li>
+      <li><a href="docentes.html"><i class="fa-solid fa-user-graduate"></i> Docentes</a></li>
+      <li><a href="materias.html"><i class="fa-solid fa-book"></i> Materias</a></li>
+      <li><a href="documentos.html"><i class="fa-solid fa-file-lines"></i> Documentos</a></li>
+      <li><a href="reportes.html"><i class="fa-solid fa-chart-bar"></i> Reportes</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="main-layout">
+    <aside class="sidebar">
+      <button class="side-btn active"><i class="fa-solid fa-table-cells"></i></button>
+      <button class="side-btn"><i class="fa-solid fa-chart-line"></i></button>
+      <button class="side-btn"><i class="fa-solid fa-users"></i></button>
+      <button class="side-btn"><i class="fa-solid fa-gear"></i></button>
+    </aside>
+
+    <main class="dashboard-content">
+
+      <!-- FILTROS SUPERIORES -->
+      <section class="filters-bar">
+        <div class="filter-group">
+          <label for="filterCiclo">Ciclo Escolar</label>
+          <select id="filterCiclo">
+            <option value="Todos">Todos</option>
+            <option value="2026-1">2026-1</option>
+            <option value="2026-2">2026-2</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filterSemestre">Semestre</label>
+          <select id="filterSemestre">
+            <option value="Todos" selected>Todos</option>
+            <option value="Semestre 1">Semestre 1</option>
+            <option value="Semestre 2">Semestre 2</option>
+            <option value="Semestre 3">Semestre 3</option>
+            <option value="Semestre 4">Semestre 4</option>
+            <option value="Semestre 5">Semestre 5</option>
+            <option value="Semestre 6">Semestre 6</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filterCarrera">Carreras</label>
+          <select id="filterCarrera">
+            <option value="Todas">Todas</option>
+            <option value="LIN">LIN</option>
+            <option value="LAE">LAE</option>
+            <option value="LC">LC</option>
+            <option value="LNI">LNI</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filterTurno">Turno</label>
+          <select id="filterTurno">
+            <option value="Todos">Todos</option>
+            <option value="Matutino">Matutino</option>
+            <option value="Vespertino">Vespertino</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filterEstatus">Estatus</label>
+          <select id="filterEstatus">
+            <option value="Todos">Todos</option>
+            <option value="Completo">Completo</option>
+            <option value="En progreso">En progreso</option>
+            <option value="Pendiente">Pendiente</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- TARJETAS DE MÉTRICAS (KPIs) -->
+      <section class="kpi-grid">
+        <div class="kpi-card">
+          <span class="kpi-title">Total Docentes Activos</span>
+          <div class="kpi-value-container">
+            <span class="kpi-number" id="kpiDocentes">0</span>
+            <canvas id="sparklineDocentes" class="sparkline"></canvas>
+          </div>
+        </div>
+
+        <div class="kpi-card">
+          <span class="kpi-title">% Cumplimiento General</span>
+          <div class="kpi-value-container">
+            <div class="radial-progress">
+              <span>0%</span>
+            </div>
+            <div class="kpi-text-info">
+              <span class="kpi-number" id="kpiCumplimiento">0%</span>
+              <span class="trend positive"><i class="fa-solid fa-arrow-trend-up"></i> Trend</span>
+            </div>
+            <canvas id="sparklineCumplimiento" class="sparkline"></canvas>
+          </div>
+        </div>
+
+        <div class="kpi-card">
+          <span class="kpi-title">Documentos Pendientes</span>
+          <div class="kpi-value-container">
+            <span class="kpi-number" id="kpiPendientes">0</span>
+            <canvas id="sparklinePendientes" class="sparkline"></canvas>
+          </div>
+        </div>
+
+        <div class="kpi-card">
+          <span class="kpi-title">Entregas Completadas</span>
+          <div class="kpi-value-container">
+            <span class="kpi-number" id="kpiEntregas">0</span>
+            <canvas id="sparklineEntregas" class="sparkline"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN DE GRÁFICOS Y MATRIZ -->
+      <section class="charts-grid">
+        <div class="chart-card matrix-card">
+          <div class="card-header">
+            <h3>Matriz de Cumplimiento por Materia y Docente</h3>
+            <div class="tabs-sub">
+              <button class="btn-tab active">Materia</button>
+              <button class="btn-tab">Docente</button>
+              <button class="btn-tab">Carrera</button>
+            </div>
+          </div>
+          <div class="matrix-table-container">
+            <table class="heatmap-table" id="heatmapTable"></table>
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <div class="card-header">
+            <h3>Estatus de Entrega por Carrera</h3>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="barChartEstatus"></canvas>
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <div class="card-header">
+            <h3>Carga Documental por Mes</h3>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="barChartMes"></canvas>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
